@@ -1,0 +1,9 @@
+var int x, y;
+x = 3;
+if 5 < x then
+var bool z;
+y = x**2 else
+y = x**3
+endif;
+print(y)
+

@@ -1,0 +1,3 @@
+var int x; //declaracion de variable
+x = 10; // guarda valor en x
+print(x)

@@ -1,0 +1,4 @@
+var int y;
+y = 100;
+print(y); //prueba de print xd
+for x : 5, 10 do print(x) endfor

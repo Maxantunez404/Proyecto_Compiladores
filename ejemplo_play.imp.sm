@@ -1,0 +1,42 @@
+push  6
+store 2
+push  0
+store 3
+push  0
+load 2
+lt
+store 0
+load 2
+push  0
+le
+store 1
+push  1
+push 0
+swap
+sub
+store 4
+L0: skip
+load 1
+jmpz L2
+push 0
+goto L3
+L2: skip 0
+push 1
+L3: skip
+jmpz L1
+load 3
+load 2
+add
+store 3
+load 2
+load 4
+add
+store 2
+load 2
+push  0
+le
+store 1
+goto L0
+L1: skip
+load 3
+print

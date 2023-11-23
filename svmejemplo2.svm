@@ -1,0 +1,16 @@
+push 7
+store 5
+push 0
+LENTRY: load 5
+push 0
+le
+jmpn LEND
+load 5
+add
+load 5
+push 1
+sub 
+store 5
+goto LENTRY
+LEND: skip 
+

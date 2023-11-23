@@ -1,0 +1,12 @@
+var bool a,b;
+var int x,y,accum;
+y = 5;
+a = false and (4 < 10);
+x = ifexp(a,6,7);
+accum=0;
+print(a);
+while 0 < x do accum = accum+x; x=x-1 endwhile;
+print(accum);
+
+for x : 3-3, 7+1 do print(x) endfor
+

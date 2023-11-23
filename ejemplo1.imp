@@ -1,0 +1,6 @@
+x = 12;
+y = 5;
+z = x < y;
+print(ifexp(z,100,200)+2);
+y = y - 1;
+print(y)

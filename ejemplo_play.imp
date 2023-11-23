@@ -1,0 +1,16 @@
+var bool a,b;
+var int x,accum, delta;
+x = 6;
+accum=0;
+a = 0 < x;
+b = x <= 0;
+delta = -1;
+while !b do
+  accum = accum+x;
+  x = x + delta;
+  b = x <= 0
+endwhile;
+      
+print(accum)
+
+
