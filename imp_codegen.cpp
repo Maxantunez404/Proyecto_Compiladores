@@ -122,6 +122,19 @@ int ImpCodeGen::visit(WhileStatement* s) {
   return 0;
 }
 
+int ImpCodeGen::visit(DoWhileStatement* s) {
+  string startLabel = next_label(); 
+  string endLabel = next_label();    
+
+  codegen(startLabel, "skip");      
+  s->body->accept(this);            
+  s->cond->accept(this);             
+  codegen(nolabel, "jmpnz", startLabel); 
+  codegen(endLabel, "skip");         
+
+  return 0;
+}
+
 //ForStatement
 int ImpCodeGen::visit(ForStatement* s) {
   string startLabel = next_label();

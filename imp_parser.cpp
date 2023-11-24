@@ -324,6 +324,12 @@ Stm* Parser::parseStatement() {
     tb = parseBody();
     if (!match(Token::ENDFOR)) parserError("Esperaba ENDFOR en for");
     s = new ForStatement(var,e,e2,tb);
+  } else if (match(Token::DO)) {
+    tb = parseBody();
+    if (!match(Token::WHILE))
+      parserError("Esperaba 'while'");
+    e = parseExp();
+    s = new DoWhileStatement(e,tb);
   }
   else {
     cout << "No se encontro Statement" << endl;

@@ -79,6 +79,13 @@ int ImpInterpreter::visit(WhileStatement* s) {
  return 0;
 }
 
+int ImpInterpreter::visit(DoWhileStatement* s) {
+  do {
+    s->body->accept(this);
+  } while (s->cond->accept(this));
+  return 0;
+}
+
 int ImpInterpreter::visit(ForStatement* s) {
   int n1 = s->e1->accept(this);
   int n2 = s->e2->accept(this);

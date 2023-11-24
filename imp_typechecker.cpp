@@ -94,6 +94,15 @@ void ImpTypeChecker::visit(WhileStatement* s) {
  return;
 }
 
+void ImpTypeChecker::visit(DoWhileStatement* s) {
+  s->body->accept(this);
+  if (!s->cond->accept(this).match(booltype)) {
+    cout << "Condicional en DoWhileStm debe de ser: " << booltype << endl;
+    exit(0);
+  }
+  return;
+}
+
 void ImpTypeChecker::visit(ForStatement* s) {
   ImpType t1 = s->e1->accept(this);
   ImpType t2 = s->e2->accept(this);
