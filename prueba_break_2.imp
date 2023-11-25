@@ -1,0 +1,7 @@
+var int x;
+x= 0;
+do
+    x = x + 1;
+    break;
+    print(x)
+while x < 5

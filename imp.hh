@@ -164,6 +164,17 @@ public:
   ~ForStatement();
 };
 
+class BreakStatement : public Stm {
+public:
+    int accept(ImpVisitor* v);
+    void accept(TypeVisitor* v);
+};
+
+class ContinueStatement : public Stm {
+public:
+    int accept(ImpVisitor* v);
+    void accept(TypeVisitor* v);
+};
 
 class StatementList {
 public:

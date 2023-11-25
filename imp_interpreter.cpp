@@ -99,6 +99,14 @@ int ImpInterpreter::visit(ForStatement* s) {
  return 0;
 }
 
+int ImpInterpreter::visit(BreakStatement *s) {
+    return 0;
+}
+
+int ImpInterpreter::visit(ContinueStatement *s) {
+    return 0;
+}
+
 int ImpInterpreter::visit(BinaryExp* e) {
   int v1 = e->left->accept(this);
   int v2 = e->right->accept(this);

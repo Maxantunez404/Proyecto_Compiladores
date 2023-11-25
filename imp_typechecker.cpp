@@ -117,6 +117,10 @@ void ImpTypeChecker::visit(ForStatement* s) {
  return;
 }
 
+void ImpTypeChecker::visit(BreakStatement *) { return;};
+
+void ImpTypeChecker::visit(ContinueStatement *) { return;};
+
 ImpType ImpTypeChecker::visit(BinaryExp* e) {
   ImpType t1 = e->left->accept(this);
   ImpType t2 = e->right->accept(this);

@@ -1,0 +1,7 @@
+var int y;
+y = 10;
+
+for x : 5, 10 do
+    print(x);
+    break
+endfor
