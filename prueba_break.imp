@@ -1,7 +1,10 @@
 var int y;
+var bool a;
 y = 10;
+a = true;
 
 for x : 5, 10 do
-    print(x);
+    print(a and false); // Este es un comentario
+    print(x);           // Y este otro
     break
 endfor

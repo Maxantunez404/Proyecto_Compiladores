@@ -3,6 +3,6 @@ x= 0;
 do
     x = x + 1;
     print(x - 1);
-    continue;
+    continue; // aqui va un continue
     print(x)
 while x < 5

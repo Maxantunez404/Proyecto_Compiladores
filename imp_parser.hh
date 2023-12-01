@@ -17,62 +17,128 @@ using namespace std;
 
 class Token {
 public:
-  enum Type { LPAREN=0, RPAREN, PLUS, MINUS, MULT, DIV, EXP, LT, LTEQ, EQ,  NUM, ID, PRINT, SEMICOLON, COMMA, ASSIGN, CONDEXP, IF, THEN, ELSE, ENDIF, WHILE, DO, ENDWHILE, ERR, END, VAR, NOT, TRUE, FALSE, AND, OR, FOR, COLON, ENDFOR, BREAK, CONTINUE };
-  static const char* token_names[37];
-  Type type;
-  string lexema;
-  Token(Type);
-  Token(Type, const string source);
+    enum Type {
+        LPAREN = 0,
+        RPAREN,
+        PLUS,
+        MINUS,
+        MULT,
+        DIV,
+        EXP,
+        LT,
+        LTEQ,
+        EQ,
+        NUM,
+        ID,
+        PRINT,
+        SEMICOLON,
+        COMMA,
+        ASSIGN,
+        CONDEXP,
+        IF,
+        THEN,
+        ELSE,
+        ENDIF,
+        WHILE,
+        DO,
+        ENDWHILE,
+        ERR,
+        END,
+        VAR,
+        NOT,
+        TRUE,
+        FALSE,
+        AND,
+        OR,
+        FOR,
+        COLON,
+        ENDFOR,
+        BREAK,
+        CONTINUE
+    };
+    static const char *token_names[37];
+    Type type;
+    string lexema;
+
+    Token(Type);
+
+    Token(Type, const string source);
 };
 
 
 class Scanner {
 public:
-  Scanner(string in_s);
-  Token* nextToken();
-  ~Scanner();  
+    Scanner(string in_s);
+
+    Token *nextToken();
+
+    ~Scanner();
+
 private:
-  string input;
-  int first, current;
-  unordered_map<string, Token::Type> reserved;
-  char nextChar();
-  void rollBack();
-  void startLexema();
-  string getLexema();
-  Token::Type checkReserved(string);
+    string input;
+    int first, current;
+    unordered_map <string, Token::Type> reserved;
+
+    char nextChar();
+
+    void rollBack();
+
+    void startLexema();
+
+    string getLexema();
+
+    Token::Type checkReserved(string);
 };
 
 class Parser {
 private:
-  Scanner* scanner;
-  Token *current, *previous;
-  bool match(Token::Type ttype);
-  bool check(Token::Type ttype);
-  bool advance();
-  bool isAtEnd();
-  void parserError(string s);
-  Program* parseProgram();
-  Body* parseBody();
-  VarDecList* parseVarDecList();
-  VarDec* parseVarDec();
-  StatementList* parseStatementList();
-  Stm* parseStatement();
-  Exp* parseExp();
-  Exp* parseBExp();
-  Exp* parseCExp();
-  Exp* parseAExp();
-  Exp* parseTerm();
-  Exp* parseFExp();
-  Exp* parseUnary();
-  Exp* parseFactor();
+    Scanner *scanner;
+    Token *current, *previous;
+
+    bool match(Token::Type ttype);
+
+    bool check(Token::Type ttype);
+
+    bool advance();
+
+    bool isAtEnd();
+
+    void parserError(string s);
+
+    Program *parseProgram();
+
+    Body *parseBody();
+
+    VarDecList *parseVarDecList();
+
+    VarDec *parseVarDec();
+
+    StatementList *parseStatementList();
+
+    Stm *parseStatement();
+
+    Exp *parseExp();
+
+    Exp *parseBExp();
+
+    Exp *parseCExp();
+
+    Exp *parseAExp();
+
+    Exp *parseTerm();
+
+    Exp *parseFExp();
+
+    Exp *parseUnary();
+
+    Exp *parseFactor();
 
 public:
-  Parser(Scanner* scanner);
-  Program* parse();
+    Parser(Scanner *scanner);
+
+    Program *parse();
 
 };
-
-
 
 
 #endif

@@ -13,25 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fd5a873-1d1f-4505-b6c8-74077a4286b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/prueba_break.imp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prueba_break_2.imp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prueba_continue.imp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prueba_continue_2.imp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/imp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp.hh" beforeDir="false" afterPath="$PROJECT_DIR$/imp.hh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp_codegen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/imp_codegen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp_codegen.hh" beforeDir="false" afterPath="$PROJECT_DIR$/imp_codegen.hh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp_interpreter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/imp_interpreter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp_interpreter.hh" beforeDir="false" afterPath="$PROJECT_DIR$/imp_interpreter.hh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp_parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/imp_parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imp_parser.hh" beforeDir="false" afterPath="$PROJECT_DIR$/imp_parser.hh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp_printer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/imp_printer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp_printer.hh" beforeDir="false" afterPath="$PROJECT_DIR$/imp_printer.hh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp_typechecker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/imp_typechecker.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp_typechecker.hh" beforeDir="false" afterPath="$PROJECT_DIR$/imp_typechecker.hh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imp_visitor.hh" beforeDir="false" afterPath="$PROJECT_DIR$/imp_visitor.hh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pruebafor.imp" beforeDir="false" afterPath="$PROJECT_DIR$/pruebafor.imp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/type_visitor.hh" beforeDir="false" afterPath="$PROJECT_DIR$/type_visitor.hh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prueba_break.imp" beforeDir="false" afterPath="$PROJECT_DIR$/prueba_break.imp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prueba_break.imp.sm" beforeDir="false" afterPath="$PROJECT_DIR$/prueba_break.imp.sm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prueba_continue.imp" beforeDir="false" afterPath="$PROJECT_DIR$/prueba_continue.imp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,31 +78,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/renat/OneDrive/Desktop/universidad-ciclo-6/Compiladores/Proyecto/Makefile",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CLionExternalConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/renat/OneDrive/Desktop/universidad-ciclo-6/Compiladores/Proyecto/Makefile&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CLionExternalConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Makefile Application.compiler">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="compiler" type="CLionNativeAppRunConfigurationType" PROGRAM_PARAMS="pruebafor.imp" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Proyecto" TARGET_NAME="Build" CONFIG_NAME="Build" version="1" RUN_PATH="$PROJECT_DIR$/compile">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
@@ -154,7 +135,9 @@
       <option name="presentableId" value="Default" />
       <updated>1700929686301</updated>
       <workItem from="1700929687478" duration="283000" />
-      <workItem from="1700931799923" duration="10080000" />
+      <workItem from="1700931799923" duration="10219000" />
+      <workItem from="1700968028194" duration="3566000" />
+      <workItem from="1701115647213" duration="23000" />
     </task>
     <servers />
   </component>
