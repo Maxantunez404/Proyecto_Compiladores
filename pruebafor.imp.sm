@@ -10,10 +10,38 @@ push  10
 le
 jmpz L1
 load 1
-print
-load 1
 push 1
 add
 store 1
+load 1
+print
 goto L0
 L1: skip
+push  5
+store 2
+L2: skip
+load 2
+push  10
+le
+jmpz L3
+load 2
+push 1
+add
+store 2
+push  1
+store 3
+L4: skip
+load 3
+push  3
+le
+jmpz L5
+load 3
+push 1
+add
+store 3
+load 2
+print
+goto L4
+L5: skip
+goto L2
+L3: skip
