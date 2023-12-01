@@ -8,28 +8,32 @@ L0: skip
 load 2
 push  20
 le
-jmpz L1
+jmpz L2
 load 2
 print
 push  1
 store 3
-L2: skip
+L3: skip
 load 3
 push  3
 le
-jmpz L3
-load 3
+jmpz L5
+load 1
+push 0
+and
 print
-goto L3
+goto L5
+L4: skip
 load 3
 push 1
 add
 store 3
-goto L2
-L3: skip
+goto L3
+L5: skip
+L1: skip
 load 2
 push 1
 add
 store 2
 goto L0
-L1: skip
+L2: skip

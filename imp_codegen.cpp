@@ -150,9 +150,10 @@ int ImpCodeGen::visit(DoWhileStatement *s) {
 //ForStatement
 int ImpCodeGen::visit(ForStatement *s) {
     string startLabel = next_label();
+    string compareLabel = next_label();
     string endLabel = next_label();
     inLoop = true;
-    loop_repeat_label = startLabel;
+    loop_repeat_label = compareLabel;
     loop_finish_label = endLabel;
 
     direcciones.add_level();
@@ -172,6 +173,7 @@ int ImpCodeGen::visit(ForStatement *s) {
 
     s->body->accept(this);
 
+    codegen(compareLabel, "skip");
     codegen(nolabel, "load", direcciones.lookup(s->id));
     codegen(nolabel, "push", 1);
     codegen(nolabel, "add");

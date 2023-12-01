@@ -6,17 +6,18 @@ L0: skip
 load 1
 push  10
 le
-jmpz L1
-load 1
-push 1
-add
-store 1
+jmpz L2
 load 1
 print
-goto L0
+goto L1
 load 1
 push  100
 mul
 print
-goto L0
 L1: skip
+load 1
+push 1
+add
+store 1
+goto L0
+L2: skip
