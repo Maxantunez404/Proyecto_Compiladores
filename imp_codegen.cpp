@@ -169,12 +169,13 @@ int ImpCodeGen::visit(ForStatement *s) {
     s->e2->accept(this);
     codegen(nolabel, "le");
     codegen(nolabel, "jmpz", endLabel);
+
+    s->body->accept(this);
+
     codegen(nolabel, "load", direcciones.lookup(s->id));
     codegen(nolabel, "push", 1);
     codegen(nolabel, "add");
     codegen(nolabel, "store", direcciones.lookup(s->id));
-
-    s->body->accept(this);
 
     codegen(nolabel, "goto", startLabel);
     codegen(endLabel, "skip");
